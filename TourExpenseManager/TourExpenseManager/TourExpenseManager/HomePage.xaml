@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="#127ac7" NavigationPage.HasNavigationBar="False" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TourExpenseManager.HomePage">
+  <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
+
+  <StackLayout VerticalOptions="Center">
+
+    <Label Text="Tour Expense Manager" HorizontalOptions="Center" FontAttributes="Bold" FontSize="30" TextColor="White"/>
+
+    <Label Text="Tour expenses tracking made easy" HorizontalOptions="Center" FontSize="16" TextColor="White"/>
+
+    <BoxView HeightRequest="50"/>
+    
+    <Entry x:Name="userName" Text="Username" TextColor="White" FontSize="14"/>
+    <Entry x:Name="password" Text="Password" TextColor="White" FontSize="14"/>
+
+    <Button Text="Login" BackgroundColor="#1dabf0" TextColor="White" Clicked="HandleLogin"/>
+    <Button Text="Register" BackgroundColor="#1dabf0" TextColor="White"/>
+    
+  </StackLayout>
+  
+  
+</ContentPage>
